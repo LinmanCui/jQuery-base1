@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<script src="jquery-1.12.1.js"></script>
+	<script>
+	//点击按钮，验证用户输入是不是中文名字，如果是，文本框背景为绿，否则为红
+	$(function(){
+	$("#btn").click(function(){
+		var reg = /^[\u4e00-\u9fa5]{2,6}$/;
+		var flag = reg.test($("#txt").val());
+		if(flag){
+			$("#txt").css("backgroundColor","green");
+		}else{
+			$("#txt").css("backgroundColor","red");
+		}
+	});
+	});
+	</script>
+</head>
+<body>
+	请输入中文名字：<input type="text" value="" id="txt"><br>
+	<input type="button" value="验证" id="btn"/>
+</body>
+</html>

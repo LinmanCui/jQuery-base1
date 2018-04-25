@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="button" value="显示效果" id="btn">
+	<div id="dv"></div>
+	<script src="jquery-1.12.1.js"></script>
+	<script>
+	var btnObj1=document.getElementById("btn");
+	$(btnObj1).click(function(){
+		$("#dv").css({"width":"400px","height":"400px","backgroundColor":"yellow"});
+	});
+	</script>
+</body>
+</html>

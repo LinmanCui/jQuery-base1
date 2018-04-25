@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div{
+		width: 300px;
+		height: 200px;
+		background-color: green;
+	}
+	.cls{
+	
+		background-color: blue;
+	}
+	</style>
+	<script src="jquery-1.12.1.js"></script>
+	<script>
+	/*改变div p span的背景色*/
+	//交集选择器 标签名.类样式的名字
+	//并集选择器 标签，类，id
+	$(function(){
+		$("#btn").click(function(){
+			$("#dv,p,.cls").css("backgroundColor","yellow");
+		});
+	});
+	</script>
+</head>
+<body>
+	<input type="button" value="显示效果" id="btn"/>
+	<div class="dv"></div>
+	<p class="cls">这是一个p</p>
+	<p>hehhee</p>
+	<ul>
+		<li>123</li>
+		<li>123</li>
+		<li>123</li>
+	</ul>
+	<span class="cls">哈哈哈哈</span>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	div{
+		width: 300px;
+		height: 200px;
+		background-color: green;
+	}
+	
+	</style>
+	<script src="jquery-1.12.1.js"></script>
+	<script>
+	/*点击按钮在div中添加一个p标签*/
+	/* 
+	 */
+	$(function(){
+		$("#btn").click(function(){
+			$("#dv").html("<p>这个p</p>");
+		});
+	});
+	</script>
+</head>
+<body>
+	<input type="button" value="显示效果" id="btn"/>
+	<div id="dv"></div>
+	
+</body>
+</html>
